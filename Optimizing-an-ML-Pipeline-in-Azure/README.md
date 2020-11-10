@@ -27,7 +27,7 @@ Post that we need to use the Azure AutoML Feature to find the best model and bes
 
 **Pipeline Architect**
 
-![Pipeline Architect](https://github.com/yash872/ML_with_Azure_Nanodegree/blob/main/Optimizing-an-ML-Pipeline-in-Azure/Pipeline_Architect.JPG?raw=true "Pipeline Architect")
+![Pipeline Architect](https://github.com/yash872/ML_with_Azure_Nanodegree/blob/main/Optimizing-an-ML-Pipeline-in-Azure/Images/Pipeline_Architect.JPG?raw=true "Pipeline Architect")
 
 ## Scikit-learn Pipeline
 
@@ -56,9 +56,9 @@ Post that we need to use the Azure AutoML Feature to find the best model and bes
   4. delay_evaluation :- The number of intervals for which to delay the first policy evaluation. If specified, the policy applies every multiple of evaluation_interval that is   greater than or equal to delay_evaluation.
   
   
-  ![Child Runs](https://github.com/yash872/ML_with_Azure_Nanodegree/blob/main/Optimizing-an-ML-Pipeline-in-Azure/Child_runs.png?raw=true "Child Runs")
+  ![Child Runs](https://github.com/yash872/ML_with_Azure_Nanodegree/blob/main/Optimizing-an-ML-Pipeline-in-Azure/Images/Child_runs.png?raw=true "Child Runs")
   
-  ![HyperDrive Metrics](https://github.com/yash872/ML_with_Azure_Nanodegree/blob/main/Optimizing-an-ML-Pipeline-in-Azure/HyperDrive_Metrics.png?raw=true "HyperDrive Metrics")
+  ![HyperDrive Metrics](https://github.com/yash872/ML_with_Azure_Nanodegree/blob/main/Optimizing-an-ML-Pipeline-in-Azure/Images/HyperDrive_Metrics.png?raw=true "HyperDrive Metrics")
 
 ## AutoML
   1.  AutmoML means that we can Automating the process, it reduces the time consumed by the training (Traditional) process. It also helps in performing iterative tasks of ML models. It is known for its incredible flexibility
@@ -68,6 +68,13 @@ Post that we need to use the Azure AutoML Feature to find the best model and bes
   5.  It also has the feature of crossvalidation where number of cross_validation split is specified using which it performs validation on the dataset.
 
 In this project, we set the AutoML configuration with accuracy as primary metric and cross validation. The cross validation is important to avoid overfitting and helps generalize the model better. For computational reasons, in this experiment, the experiment timeout was set to 30 Minutes which have limited the number of Models that could be built.
+
+ ![AutoML_Models](https://github.com/yash872/ML_with_Azure_Nanodegree/blob/main/Optimizing-an-ML-Pipeline-in-Azure/Images/AutoML_Models.png?raw=true "AutoML_Models")
+ ![Best_AutoML_Model](https://github.com/yash872/ML_with_Azure_Nanodegree/blob/main/Optimizing-an-ML-Pipeline-in-Azure/Images/Best_AutoML_Model.png?raw=true "Best_AutoML_Model")
+ ![Best_AutoML_Metrics](https://github.com/yash872/ML_with_Azure_Nanodegree/blob/main/Optimizing-an-ML-Pipeline-in-Azure/Images/Best_AutoML_Metrics.png?raw=true "Best_AutoML_Metrics")
+ ![AutoML_Features](https://github.com/yash872/ML_with_Azure_Nanodegree/blob/main/Optimizing-an-ML-Pipeline-in-Azure/Images/AutoML_Features.png?raw=true "AutoML_Features")
+ ![AutoML_BoxPlot](https://github.com/yash872/ML_with_Azure_Nanodegree/blob/main/Optimizing-an-ML-Pipeline-in-Azure/Images/AutoML_BoxPlot.png?raw=true "AutoML_BoxPlot")
+ 
 
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
