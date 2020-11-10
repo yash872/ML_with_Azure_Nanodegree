@@ -6,12 +6,21 @@ In this project, we build and optimize an Azure ML pipeline using the Python SDK
 This model is then compared to an Azure AutoML run.
 
 ## Summary
-**In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
+The projects is performed on the Bank Marketing Dataset and the Azure ML Studio, In which we aims at making a binary prediction to find whether customers will join a Bank or Not.This dataset is related to direct marketing campaigns of a Portuguese banking sector. The campaigns were based on phone calls.
 
-**In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
+The best performing model was a **Voting Ensemble**. This was found using Automl feature of Azure.
+
+### Files Used to perform the Analysis are 
+
+- Train.py
+- Project.ipynb
+
+We need to build a Machine learning model using skikit learn and tune the hyper parameters to find the best model using azure ML python SDK and Hyper Drive.
+Post that we need to use the Azure AutoML Feature to find the best model and best Hyperparameters.At the end of this project, we want to create a solid understanding about the Azure ML Studio and some important standard practices of MLops inside Azure platform.
 
 ## Scikit-learn Pipeline
-**Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
 
 **What are the benefits of the parameter sampler you chose?**
 
