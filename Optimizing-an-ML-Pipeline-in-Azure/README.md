@@ -49,13 +49,13 @@ The best performing model was a **Voting Ensemble**. This was found using **Auto
   ![HyperDrive Metrics](https://github.com/yash872/ML_with_Azure_Nanodegree/blob/main/Optimizing-an-ML-Pipeline-in-Azure/Images/HyperDrive_Metrics.png?raw=true "HyperDrive Metrics")
 
 ## AutoML
-  1.  AutmoML means that we can Automating the process, it reduces the time consumed by the training (Traditional) process. It also helps in performing iterative tasks of ML models. It is known for its incredible flexibility
-  2.  With the help of AutoML we can accelerate the time taken for deployment of models into production with great efficency.
-  3.  The models used here were RandomForests,Boosted Trees,XGBoost,LightGBM,SGD Classifier,Voting Ensemble.
-  4.  It also used different pre- processing techniques like Standard Scaling, Min Max Scaling, Sparse Normalizer, MaxAbsScaler. It also has efficiently balanced the class Imabalance in the data.
+  1.  Automated machine learning, also referred to as automated ML or AutoML, is the process of automating the time consuming, iterative Traditional tasks of machine learning model development, It is known for its incredible flexibility.
+  2.  AutoML help us to accelerate the time taken for deployment of models into production with great efficency.
+  3.  The models used here were RandomForests, Boosted Trees, XGBoost, LightGBM, SGD Classifier, Voting Ensemble etc.
+  4.  The pre-processing techniques used by AutoML are like Standard Scaling, Min Max Scaling, Sparse Normalizer, MaxAbsScaler. It also has efficiently balanced the class Imabalance in the data.
   5.  It also has the feature of crossvalidation where number of cross_validation split is specified using which it performs validation on the dataset.
 
-In this project, we set the AutoML configuration with accuracy as primary metric and cross validation. The cross validation is important to avoid overfitting and helps generalize the model better. For computational reasons, in this experiment, the experiment timeout was set to 30 Minutes which have limited the number of Models that could be built.
+In this project, we set the AutoML configuration with **Accuracy** as primary metric and cross validation. The cross validation is important to avoid overfitting and helps generalize the model better. For computational reasons, in this experiment, the experiment pre-defined timeout was set to 30 Minutes which have limited the number of Models that could be built.
 
  ![AutoML_Models](https://github.com/yash872/ML_with_Azure_Nanodegree/blob/main/Optimizing-an-ML-Pipeline-in-Azure/Images/AutoML_Models.png?raw=true "AutoML_Models")
  ![Best_AutoML_Model](https://github.com/yash872/ML_with_Azure_Nanodegree/blob/main/Optimizing-an-ML-Pipeline-in-Azure/Images/Best_AutoML_Model.png?raw=true "Best_AutoML_Model")
@@ -70,7 +70,10 @@ In this project, we set the AutoML configuration with accuracy as primary metric
 - The architecture of both pipelines are different, but the ideas are close: Load the data, instanciate the infrastructure to compute, set the parameters and call the compute method. The main difference is the that using AutoML we have infitine possibilities to increase the search for a better algorithm or a hyperparameter combination.
 
 ## Future work
-We can notice that the dataset has Class Imbalance, we need to treat this by applying few balancing techniques like SMOTE,ADASYN and try to find further on this. For improvements and future experiments it is important to explore other algorithms and validate more metrics. Accuracy in this case is very important, but using a confusion matrix can be important.We can also used balanced_accuracy which is a primary metric that calculates for the arithmetic mean of recall for each class. Another example is AUC_weighted, which gets the arithmetic mean of the score for each class , weighted by the true number of true instances in each class. We can modify the experiments with other hyperparameters and increase the cross validation to enhance models performance and generalization.
+- As we can noticed the class imbalaced in dataset, should also try some other techniques like SMOTE, ADASYN etc.
+- we shsould also explore other algorithms and validate more metrics for further improvements.
+- HyperDrive is a great tool, Although in this project we have used logistic regression, other algorithms which require more computing power are even more appropriate for HyperDrive, for example Deep Neural Networks.
+- We can modify the experiments with other hyperparameters and increase the cross validation to enhance models performance and generalization.
 
 ## Proof of cluster clean up
 ![Delete_Cluster](https://github.com/yash872/ML_with_Azure_Nanodegree/blob/main/Optimizing-an-ML-Pipeline-in-Azure/Images/Delete_Cluster.png?raw=true "Delete_Cluster")
